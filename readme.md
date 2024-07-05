@@ -65,3 +65,42 @@ python src/main.py --raw_reads_dir data/example_fastq --species_name "Escherichi
 ```
 This command will process the FASTQ files, map the reads to the reference genome, call variants, detect ARGs, and generate comparative analysis results.
 
+## Output
+
+The pipeline generates the following outputs:
+
+- **QC Reports**: Quality control reports for raw and trimmed reads.
+- **Mapped Reads**: BAM files of mapped reads.
+- **Variants**: VCF files of identified variants.
+- **ARG Results**: Detected ARGs in CSV format.
+- **Comparative Analysis**: Summary table and visualizations of ARG distribution.
+
+## Credits
+
+This project utilizes the following software and libraries:
+
+- [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+- [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
+- [BWA MEM](http://bio-bwa.sourceforge.net/)
+- [SAMtools](http://www.htslib.org/)
+- [BCFtools](http://www.htslib.org/)
+- [ABRicate](https://github.com/tseemann/abricate)
+- [pandas](https://pandas.pydata.org/)
+- [Biopython](https://biopython.org/)
+- [Matplotlib](https://matplotlib.org/)
+- [Seaborn](https://seaborn.pydata.org/)
+- [SciPy](https://www.scipy.org/)
+- [Bokeh](https://bokeh.org/)
+- [Plotly](https://plotly.com/)
+
+## Software Dependencies
+
+Ensure the following software dependencies are installed:
+
+- Python 3.6 or higher
+- FastQC
+- Trimmomatic
+- BWA MEM
+- SAMtools
+- BCFtools
+- ABRicate
