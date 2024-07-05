@@ -21,8 +21,6 @@ def print_ascii_art():
     print("     ARG Framework")
 
 def main(args):
-    print_ascii_art()
-    
     raw_reads_dir = args.raw_reads_dir
     reference_genome = find_reference_genome(args.species_name)
     qc_reports_dir = 'data/qc_reports'
@@ -45,6 +43,8 @@ def main(args):
     plot_arg_distribution(summary, 'results/arg_distribution.png')
 
 if __name__ == "__main__":
+    print_ascii_art()
+    
     parser = argparse.ArgumentParser(description="Comparative ARG Framework")
     parser.add_argument('--raw_reads_dir', type=str, required=True, help="Directory containing raw FASTQ files")
     parser.add_argument('--species_name', type=str, required=True, help="Species name to find reference genome")
